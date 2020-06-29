@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>E-Commerce - MDBootstrap</title>
+
+    <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <style>
+  	</style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <section id="top-bar" class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-phone"></i> +201550302951
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-envelope-open"></i> enmahmoudsalah@outlook.com
+        </div>
+        <div class="col-md-4">
+          <div class="social text-right">
+            <a href="https://twitter.com/Mahmoud98314544">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/mahmoud245salah/">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img src="/static/img/logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <!-- Edited By Mahmoud Salah -->
+          <li
+
+                  class="nav-item mr-3"
+
+          >
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <!-- Edited By Mahmoud Salah -->
+          <li
+
+                  class="nav-item active mr-3"
+
+          >
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+          <li
+
+                  class="nav-item mr-3"
+
+          >
+            <a class="nav-link" href="/listings/">Featured Listings</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+
+          <li
+
+                  class="nav-item mr-3"
+
+          >
+            <a class="nav-link" href="/accounts/register/">
+              <i class="fas fa-user-plus"></i> Register</a>
+          </li>
+          <li
+
+                  class="nav-item mr-3"
+
+          >
+            <a class="nav-link" href="/accounts/login/">
+              <i class="fas fa-sign-in-alt"></i>
+
+              Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+ <section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About BT Real Estate</h1>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="/">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>We Search For The Perfect Home</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p>
+          <img src="/static/img/about.jpg" alt="">
+          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet
+            neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat
+            commodi id libero eveniet harum perferendis laborum molestias quia.</p>
+        </div>
+        <div class="col-md-4">
+
+
+
+          <div class="card">
+            <img class="card-img-top" src="/media/photos/2020/06/07/ma1.jpg" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Seller Of The Month</h5>
+              <h5 class="card-title">Mahmoud Salah</h5>
+              <h6 class="text-secondary"></h6>
+              <p class="card-text">CEO</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+    <hr>
+    <a href="/listings/" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+      <div class="row text-center">
+
+
+        <div class="col-md-4">
+          <img src="/media/photos/2020/06/07/ma1.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Mahmoud Salah</h4>
+          <p class="text-success">
+
+            <i class="fas fa-award text-success mb-3"></i>
+
+            Realtor
+          </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> +201065064342</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> enmahmoudsalah@outlook.com</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/media/photos/2020/06/07/mostafa.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Mostafa</h4>
+          <p class="text-success">
+
+            Realtor
+          </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> +20102323322323</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> mostafa@gmail.com</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/media/photos/2020/06/07/mohamed.jpg" alt="" class="rounded-circle mb-3">
+          <h4>Bahaa</h4>
+          <p class="text-success">
+
+            Realtor
+          </p>
+          <hr>
+          <p>
+            <i class="fas fa-phone"></i> +201525515541</p>
+          <p>
+            <i class="fas fa-envelope-open"></i> bahaaaaa@outlook.com</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+     <!-- Footer -->
+    <footer id="main-footer" class="py-4 bg-primary text-white text-center">
+    Copyright &copy;
+    <span class="year"></span> BT Real Estate
+    <h5>developed By Mahamoud Salah</h5>
+  </footer>
+   <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+
+    <script type="text/javascript">
+        /* WOW.js init */
+        new WOW().init();
+
+        // Tooltips Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script>
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+    </script>
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+    </script>
+</body>
+</html>

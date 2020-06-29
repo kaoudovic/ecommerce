@@ -1,0 +1,79 @@
+{% load cart_template_tags %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container" >
+
+      <!-- Brand -->
+      <a class="navbar-brand waves-effect" href="/">
+        <strong class="blue-text">MKe-commerce</strong>
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+                 <a class="nav-link" href="/"><svg width="1em" height="1em" viewBox="0 1 15 12" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+               <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                     </svg></a>
+          </li>
+           <li class="nav-item ">
+            <a class="nav-link waves-effect" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="/checkout">
+            Checkout</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+
+          {% if request.user.is_authenticated %}
+          <li class="nav-item ">
+              <a class="nav-link dark-grey-text font-weight-bold" href="{% url 'core:order-summary' %}"><span
+                  class="badge danger-color">{{ request.user|cart_item_count }}</span> <i class="fas fa-shopping-cart blue-text" aria-hidden="true"></i>
+                <span class="clearfix d-none d-sm-inline-block">Cart</span></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="/conect"><i class="fas fa-envelope blue-text"></i> Contact <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown ml-3">
+              <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-4"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user blue-text"></i>
+                Profile </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                <a class="dropdown-item waves-effect waves-light" href="#">{{user.username}}</a>
+                <a class="dropdown-item waves-effect waves-light" href="{% url 'account_logout' %}">Log out</a>
+              </div>
+            </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="/conect"><i class="fas fa-envelope blue-text"></i> Contact <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown ml-3">
+              <a class="nav-link dropdown-toggle waves-effect waves-light dark-grey-text font-weight-bold" id="navbarDropdownMenuLink-4"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user blue-text"></i>
+                Registration </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
+                <a class="dropdown-item waves-effect waves-light" href="{% url 'account_login' %}">Login</a>
+                <a class="dropdown-item waves-effect waves-light" href="{% url 'account_signup' %}">Singup</a>
+              </div>
+            </li>
+
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+  </nav>
